@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Art - Lagos, Nigeria</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 50%, #009688 50%, #009688 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  .lagos-container {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    background: linear-gradient(to bottom, #FFA500, #FF4500);
+    border-radius: 0 0 50% 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sun {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD700 60%, transparent 60%);
+    border-radius: 50%;
+  }
+  .bridge {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #4B0082;
+  }
+  .bridge::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 10%;
+    width: 80%;
+    height: 40px;
+    background: #4B0082;
+    border-radius: 50%;
+  }
+  .bridge-line {
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #FFFFFF;
+  }
+  .bridge-pillar {
+    position: absolute;
+    bottom: 20px;
+    width: 8px;
+    height: 60px;
+    background: #4B0082;
+  }
+  .bridge-pillar:nth-child(1) {
+    left: 15%;
+  }
+  .bridge-pillar:nth-child(2) {
+    left: 30%;
+  }
+  .bridge-pillar:nth-child(3) {
+    left: 45%;
+  }
+  .bridge-pillar:nth-child(4) {
+    left: 60%;
+  }
+  .bridge-pillar:nth-child(5) {
+    left: 75%;
+  }
+  .water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: #0000CD;
+  }
+  .building {
+    position: absolute;
+    bottom: 20%;
+    width: 40px;
+    height: 100px;
+    background: #2F4F4F;
+    box-shadow: 5px 5px 0 0 #2F4F4F, 10px 10px 0 0 #2F4F4F, 15px 15px 0 0 #2F4F4F;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .building:nth-child(2) {
+    left: 10%;
+    height: 120px;
+  }
+  .building:nth-child(3) {
+    left: 30%;
+    height: 80px;
+  }
+  .building:nth-child(4) {
+    left: 50%;
+    height: 140px;
+  }
+  .building:nth-child(5) {
+    left: 70%;
+    height: 100px;
+  }
+  .window {
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    margin: 2px;
+  }
+  .text {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="lagos-container">
+    <div class="sun"></div>
+    <div class="bridge">
+      <div class="bridge-line"></div>
+      <div class="bridge-pillar" style="left: 15%;"></div>
+      <div class="bridge-pillar" style="left: 30%;"></div>
+      <div class="bridge-pillar" style="left: 45%;"></div>
+      <div class="bridge-pillar" style="left: 60%;"></div>
+      <div class="bridge-pillar" style="left: 75%;"></div>
+    </div>
+    <div class="water"></div>
+    <div class="building" style="left: 5%;">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+    </div>
+    <div class="building" style="left: 20%; height: 120px;">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+    </div>
+    <div class="building" style="left: 40%; height: 80px;">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+    </div>
+    <div class="building" style="left: 60%; height: 140px;">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+    </div>
+    <div class="building" style="left: 80%; height: 100px;">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+    </div>
+    <div class="text">Lagos - The City of<br>Dreams</div>
+  </div>
+</body>
+</html>
